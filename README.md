@@ -9,3 +9,20 @@ https://medium.com/@umarfaruk_56318/chatbot-using-tensorflow-trained-on-cornell-
 
 Deployment Video:
 https://youtu.be/Pzztrsnq-mw
+
+## PocketSidekick MVP
+
+This repository now includes a lightweight `PocketSidekick` MVP implementation with:
+
+- Router-based intent handling (`chat` vs `/tool:<name>` commands)
+- Built-in tool registry (`echo`, `word_count`)
+- SQLite-backed conversational memory
+- Persona mode for response shaping
+- Quantization config export utility (`artifacts/quantization.json`)
+
+### Quick start
+
+```bash
+python -m pocketsidekick.app
+python -m unittest tests/test_pocketsidekick.py
+```
